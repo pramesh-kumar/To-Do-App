@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(168, 103, 228);
+    align-items: center;
 }
+.center_div{
+    width: 25%;
+    height: 80vh;
+    background-color: rgb(205, 208, 211);
+    box-shadow: 5px 5px 15px -5px rgb(66, 72, 84);
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+    background: transparent;
+    background-color:  rgb(168, 103, 228);
+    padding: 6px 0 2px 0 ;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 9, 9);
+}
+
+
+input{
+    text-align: center;
+    height: 30px;
+    /* top: 10px; */
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    width: 60%;
+    border-bottom: 4px solid  rgb(168, 103, 228);
+    outline: none;
+
+}
+
+button{
+    min-height: 40px;
+    width: 45px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color:  rgb(168, 103, 228);;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    margin-left:  10px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 9, 9);
+}
+
+button:hover{
+    background-color: rgb(42, 212, 42);
+}
+
+ol{
+    margin-top: 30px;
+    list-style: none;
+}
+
+ol li{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    /* padding-left: 65px; */
+    align-items: center;
+    /* justify-content: center; */
+    color: rgb(168, 103, 228);
+    text-transform: capitalize;
+}
+
+
+.todo-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.todo-style .fa-times{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(168, 103, 228);;
+    color: white;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 9, 9);
+    padding: 5px 0 7px 0;
+}
+
+
+.todo-style .fa-times:hover{
+    background-color:  red;
+}
+
+@media (max-width:1000px){
+    .center_div{
+        width: 55%;
+    }
+
+    .todo-style .fa-times{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        margin: 0 15px 0 15px;
+    }
+
+    button{
+        min-height: 40px;
+        margin-left:  5px;
+        height: 30px;
+        color: white;
+        font-size: 40px;
+    }
+
+
+
+}
+
+/* @media (min-width:768px) and (max-width:1228px){
+    .center_div{
+        width: 50%;
+    }
+} */
+
+
